@@ -3,7 +3,6 @@ package guru.springframework.sfgpetclinic.services.map;
 import guru.springframework.sfgpetclinic.model.Owner;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.Set;
 
@@ -35,7 +34,6 @@ class OwnerMapServiceTest {
     }
 
     @Test
-    @DirtiesContext
     void saveExistingId() {
         Long id = 2L;
         Owner owner2 = Owner.builder().id(id).build();
